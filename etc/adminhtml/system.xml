@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="nagarro_extension" translate="label" sortOrder="50">
+            <label>Nagarro</label>
+        </tab>
+        <section id="bestseller" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+         
+            <label>BestSeller</label>
+            <tab>nagarro_extension</tab>
+            <resource>Nagarro_BestSeller::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>BestSeller Products</label>
+                 <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="skus" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product SKUs</label>
+                    <comment>Put sku (,) sepreated. For ex. sku1,sku2</comment>
+                    <tooltip>These Products Will appear in Best Seller Product Carousels</tooltip>
+                </field>  
+               				
+            </group>
+        </section>
+    </system>
+</config>

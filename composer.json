@@ -1,0 +1,21 @@
+{
+    "name": "nagarro/bestseller",
+    "description": "magento 2 module which displays products based on skus entered from admin panel",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "trishla saxena",
+            "email": "trishla.saxena@nagarro.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4.0",
+        "elastic-search": "~7.7.0"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Nagarro\\BestSeller\\": ""
+        }
+    }
+}
