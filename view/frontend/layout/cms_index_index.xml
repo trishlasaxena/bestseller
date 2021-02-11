@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
- <head>
-        <css src="Nagarro_BestSeller::css/owl.carousel.css" />
-        <css src="Nagarro_BestSeller::css/bestseller.css" />
-    </head>
+
  <body>
      <referenceContainer name="content">
          <block class="Nagarro\BestSeller\Block\BestSeller" name="bestseller" template="Nagarro_BestSeller::bestseller_slider.phtml"/>
        </referenceContainer>
    </body>
 </page>
-

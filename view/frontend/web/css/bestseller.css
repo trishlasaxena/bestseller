@@ -1,4 +1,4 @@
-.product-div{
+.nagarro-bestseller .product-div{
     border: 1px solid;
     margin-left: 20px;
     padding-left: 20px;
@@ -7,20 +7,20 @@
     box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, .3);
       }
 
-.title{
+  .title{
     text-align: center
 }
 
-.map-old-price, .product-item .map-old-price{
+.nagarro-bestseller .map-old-price, .product-item .map-old-price{
     display: inline-block;
     min-width: 0rem;
 }
 
-.product-item .old-price {
+.nagarro-bestseller .product-item .old-price {
      margin: 0px 0; 
 }
 
-.owl-carousel .owl-nav button.owl-prev{
+.nagarro-bestseller .owl-carousel .owl-nav button.owl-prev{
     width: 15px;
    height: 60px;
    position: absolute;
@@ -29,7 +29,7 @@
    display: block !important;
    border:0px solid black; 
  }
- .owl-carousel .owl-nav button.owl-next{
+ .nagarro-bestseller .owl-carousel .owl-nav button.owl-next{
     width: 15px;
    height: 60px;
    position: absolute;
@@ -39,6 +39,4 @@
    border:0px solid black; 
  } 
 
- .owl-carousel .owl-nav.disabled{
-    /*  display:none;   */
- }
+ 

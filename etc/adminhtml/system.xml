@@ -15,11 +15,15 @@
                     <label>Module Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="skus" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="skus" translate="label" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Product SKUs</label>
                     <comment>Put sku (,) sepreated. For ex. sku1,sku2</comment>
                     <tooltip>These Products Will appear in Best Seller Product Carousels</tooltip>
                 </field>  
+                  <field id="dots" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Navigation Dots</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
                				
             </group>
         </section>

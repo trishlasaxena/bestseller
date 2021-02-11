@@ -73,11 +73,33 @@
     border:0px solid black;
   }
   .owl-carousel button.owl-dot {
-    background: none;
+   /*   background: none;
     color: inherit;
     border: none;
     padding: 0 !important;
-    font: inherit; }
+    font: inherit;*/ 
+  height: 5px; 
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  align-content:center;
+  margin-left: auto;
+  margin-right: auto; 
+  display:inline-block;
+  position:relative;
+  padding:5px; 
+  
+  }
+   .owl-carousel .owl-dots {
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+} 
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {

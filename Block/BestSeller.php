@@ -169,4 +169,9 @@ class BestSeller extends Template
         return $this->scopeConfig->getValue('bestseller/general/enable', \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
         $this->storeManager->getStore());
     }
+    public function isDots()
+    {
+        return $this->scopeConfig->getValue('bestseller/general/dots', \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
+        $this->storeManager->getStore());
+    }
 } 

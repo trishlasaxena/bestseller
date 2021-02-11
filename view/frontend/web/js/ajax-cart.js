@@ -8,7 +8,7 @@ define([
     $.widget('custom.ajax', $.mage.catalogAddToCart, {
  
         ajaxSubmit: function(form) {
-            var self = this; console.log('ajax-call');
+            var self = this; 
             $(self.options.minicartSelector).trigger('contentLoading');
             self.disableAddToCartButton(form);
  

@@ -12,13 +12,14 @@
  
 ?>
  <h1 class="title"><?php echo __($this->getSectionTitle()); ?></h1>
-<div class="owl-carousel owl-theme">
+<div class="nagarro-bestseller owl-carousel owl-theme">
 
     <?php foreach ($products as $product) {  ?>
         
         <ol class="products list items product-items ">
     <li class="item product product-item page-products ">
-        <div class="product-item-info product-div" 
+    
+        <div class="product-item-link product-div" 
                      id="product-item-info_<?= /* @noEscape */ $product->getId() ?>"
                      data-container="product-grid">     
         <img alt="<?php echo $product->getName(); ?>"
@@ -37,13 +38,13 @@
                                 <?= $product->getModelNo(); ?>
                             </a>
 
-                            <div class=" product-title">
-                                <a href="<?php echo $productUrl; ?>" class="product-item-link" title='<?= $product->getName(); ?>'>
-                                <?php echo $product->getName(); ?>
-                                </a>
-                            </div>
-            
-                            
+                            <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="<?php echo $productUrl; ?>">
+                                <?= $product->getName(); ?>
+                            </a>
+                            </strong>
+
 							<?php 
 								$finalPriceFlag = 0;
 								$showPrice = 0;
@@ -145,7 +146,8 @@
 {
 "*": {
     "Nagarro_BestSeller/js/custom-slider": {
-        "count": "<?= $productsCount ?>"
+        "count": "<?= $productsCount ?>",
+        "isDots": "<?= $block->escapeJs($block->isDots()) ?>"
     }
 }
 }
